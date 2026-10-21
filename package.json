@@ -1,0 +1,21 @@
+{
+  "name": "lusail-money",
+  "version": "0.1.0",
+  "description": "Dependency-free bidi-safe money display helpers extracted from Lusail POS.",
+  "type": "module",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/ahmedalkhalafawy/lusail-money.git" },
+  "bugs": { "url": "https://github.com/ahmedalkhalafawy/lusail-money/issues" },
+  "homepage": "https://github.com/ahmedalkhalafawy/lusail-money#readme",
+  "sideEffects": false,
+  "engines": { "node": ">=22.18.0" },
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist", "src", "README.md", "README.ar.md", "LICENSE", "PROVENANCE.md"],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node scripts/build.mjs && node --test tests/*.test.mjs",
+    "prepack": "node scripts/build.mjs"
+  }
+}
